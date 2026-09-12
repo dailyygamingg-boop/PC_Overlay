@@ -155,6 +155,8 @@ systemdサービスの開始/停止/再起動、ジャーナルログ
 
 インストール
 
+```bash
+
 python3 -m venv .venv
 
 source .venv/bin/activate
@@ -162,6 +164,8 @@ source .venv/bin/activate
 pip install fastapi uvicorn paramiko psutil
 
 python3 pcoverlay.py
+
+```
 
 初回起動時に、バインドIPアドレス、ポート番号、ユーザー名、パスワードの入力を求められます。設定はconfig.jsonに保存されます（chmod 600、コミットしないでください）。
 
